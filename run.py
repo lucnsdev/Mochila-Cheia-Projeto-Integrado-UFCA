@@ -18,7 +18,7 @@ Como executar:
 from src.web import create_app
 
 app = create_app("development")
-
+print("test")
 
 if __name__ == "__main__":
     app.run(debug=True)
