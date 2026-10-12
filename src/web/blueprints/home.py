@@ -19,6 +19,8 @@ home_bp = Blueprint("home", __name__)
 
 @home_bp.route("/")
 def index():
+    value  = 1 / 0
+    print(value)
     """Home/busca (receptor) com itens reais do banco."""
     repo = EstatisticasRepository()
     return render_template(
